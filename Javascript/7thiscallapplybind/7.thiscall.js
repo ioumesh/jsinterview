@@ -33,7 +33,7 @@ function employee(firstName, lastName, department) {
 }
 
 const greet = function (prefix, suffix) {
-  console.log(`${prefix} ${this.firstName} ${this.lastName} ${suffix}`);
+  return `${prefix} ${this.firstName} ${this.lastName} ${suffix}`;
 };
 let coder1 = new coder("umesh", "kumar", "javascript");
 greet.call(coder1, "hi", "are you fine");

@@ -23,7 +23,7 @@ function closure() {
 
 closure();
 
-// private counter
+
 
 // example 2
 function makeFun() {
