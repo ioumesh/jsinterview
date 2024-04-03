@@ -14,7 +14,8 @@ const throttle = (cb, limit) => {
 const shoot = () => {
   console.log("function called");
 };
+const thortShoot = throttle(shoot, 3000);
 const throt = throttle(shoot, 500);
 document.getElementById("shootbtn").addEventListener("click", function (e) {
-  throt();
+  thortShoot();
 });
