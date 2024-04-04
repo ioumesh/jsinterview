@@ -1,21 +1,21 @@
 // // 1
-// const firstPromise = new Promise((resolve, reject) => {
-//   setTimeout(resolve, 500, "one");
-// });
+const firstPromise = new Promise((resolve, reject) => {
+  setTimeout(resolve, 500, "one");
+});
 
-// const secondPromise = new Promise((resolve, reject) => {
-//   setTimeout(resolve, 100, "two");
-// });
+const secondPromise = new Promise((resolve, reject) => {
+  setTimeout(resolve, 100, "two");
+});
 
-// Promise.race([firstPromise, secondPromise]).then((res) => console.log(res));
+Promise.race([firstPromise, secondPromise]).then((res) => console.log(res));
 
 // // 2
-// async function getData() {
-//   return await Promise.resolve("i made it ");
-// }
+async function getData() {
+  return await Promise.resolve("i made it ");
+}
 
-// const data = getData();
-// console.log(data.then((res) => console.log(res)));
+const data = getData();
+console.log(data.then((res) => console.log(res)));
 // // 3
 const myPromise = () => Promise.resolve("i have resolved");
 
