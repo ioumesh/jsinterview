@@ -17,5 +17,4 @@ function add(a) {
     return a;
   };
 }
-
 console.log(add(5)(2)(4)(5)());
